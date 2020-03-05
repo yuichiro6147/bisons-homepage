@@ -1,0 +1,65 @@
+[
+  {
+    "type": "get",
+    "url": "/sample/:code",
+    "title": "1. show",
+    "group": "Sample",
+    "name": "show",
+    "description": "<p>一覧を取得します。</p>",
+    "version": "0.0.0",
+    "filename": "app/Http/Controllers/SampleController.php",
+    "groupTitle": "Sample",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/api/sample/:code"
+      }
+    ],
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "code",
+            "description": "<p>コード</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Path-Example:",
+          "content": "/sample/1",
+          "type": "path"
+        }
+      ]
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "name",
+            "description": "<p>氏名</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "mail",
+            "description": "<p>メールアドレス</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Response-Example",
+          "content": "{\n  \"name\": \"名前です\",\n  \"mail\": \"メールアドレスです\",\n}",
+          "type": "json"
+        }
+      ]
+    }
+  }
+]
