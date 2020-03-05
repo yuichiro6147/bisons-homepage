@@ -13,4 +13,4 @@ storage/*.key
 # IntelliJ IDEA
 .idea/
 
-!public/apidoc/vendor/
+!public/**/vendor/
